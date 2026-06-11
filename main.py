@@ -13,11 +13,11 @@ from utils import validar_parametros, ler_enderecos
 # Altere os valores abaixo para testar outras configuracoes
 # ============================================================
 
-CACHE_SIZE = 1024          # tamanho total da cache em bytes
-BLOCK_SIZE = 32           # tamanho de cada bloco em bytes
-ASSOC = 2                 # 1 = mapeamento direto, 2 = 2-way, 4 = 4-way etc.
+CACHE_SIZE = 256          # tamanho total da cache em bytes
+BLOCK_SIZE = 16           # tamanho de cada bloco em bytes
+ASSOC = 1                 # 1 = mapeamento direto, 2 = 2-way, 4 = 4-way etc.
 ADDR_BITS = 16            # quantidade de bits do endereco fisico
-INPUT_FILE = "acessos_teste2.txt"   # arquivo com os enderecos de memoria
+INPUT_FILE = "acessos_teste1.txt"   # arquivo com os enderecos de memoria
 
 # Politica de substituicao usada quando ASSOC > 1
 # Pode ser "LRU" ou "FIFO"
